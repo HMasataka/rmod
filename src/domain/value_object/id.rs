@@ -1,12 +1,5 @@
-#[derive(Debug)]
-pub struct ID {
-    value: String,
-}
+mod collection;
+mod id;
 
-impl ID {
-    pub fn new(value: &str) -> Self {
-        Self {
-            value: value.to_string(),
-        }
-    }
-}
+pub use collection::IdCollection;
+pub use id::ID;
