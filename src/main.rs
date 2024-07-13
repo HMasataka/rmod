@@ -1,8 +1,8 @@
-mod id;
-mod node;
+mod domain;
+use domain::{entity::node::Node, value_object::id::ID};
 
 fn main() {
-    let node = node::Node::new(id::ID::new("1"), "Node 1");
+    let node = Node::new(ID::new("1"), "Node 1");
 
     println!("Hello, module: {:?}", node);
 }
