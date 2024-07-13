@@ -1,4 +1,4 @@
-use crate::domain::value_object::id::ID;
+use crate::domain::value_object::ID;
 
 #[derive(Debug)]
 pub struct Node {
